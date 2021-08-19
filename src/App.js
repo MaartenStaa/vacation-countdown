@@ -63,10 +63,12 @@ function App() {
       <div className="App-background" />
 
       <header className="App-header">
-        <h1>Vacation countdown</h1>
+        <h1>Is it vacation time yet?</h1>
       </header>
 
-      <p className="App-countdown"> Only {timeLeft} left!</p>
+      <p className="App-countdown">
+        {targetDate > new Date() ? `Nope! Only ${timeLeft} left!` : "Yes!!!"}
+      </p>
     </div>
   );
 }
