@@ -1,6 +1,6 @@
 {
   "name": "vacation",
-  "homepage": "https://maartenstaa.github.io/vacation-countdown",
+  "homepage": "https://vacation.maartenstaa.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
