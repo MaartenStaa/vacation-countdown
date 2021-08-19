@@ -44,7 +44,7 @@ function timeDiff(now, target) {
 }
 
 function App() {
-  const targetDate = useMemo(() => new Date(2021, 9, 18, 10, 20), []);
+  const targetDate = useMemo(() => new Date(2021, 8, 18, 10, 20), []);
   const [timeLeft, setTimeLeft] = useState(() =>
     timeDiff(new Date(), targetDate)
   );
