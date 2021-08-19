@@ -23,7 +23,6 @@ function timeDiff(now, target) {
 
   const parts = [];
   let remaining = totalSeconds;
-  // for (const factor of [WEEKS, DAYS, HOURS, MINUTES]) {
   for (let i = 0; i < FACTORS.length; ++i) {
     const factor = FACTORS[i];
     const n = Math.floor(remaining / factor);
@@ -36,7 +35,6 @@ function timeDiff(now, target) {
     parts.push(`${n} ${FACTOR_LABELS[i][n === 1 ? 0 : 1]}`);
   }
 
-  console.log(parts, MAX_FACTORS, parts.length, parts.slice());
   return (
     parts.slice(0, MAX_FACTORS - 1).join(", ") +
     (parts.length >= MAX_FACTORS
@@ -46,7 +44,7 @@ function timeDiff(now, target) {
 }
 
 function App() {
-  const targetDate = useMemo(() => new Date("2021-09-18 10:20:00"), []);
+  const targetDate = useMemo(() => new Date(2021, 9, 18, 10, 20), []);
   const [timeLeft, setTimeLeft] = useState(() =>
     timeDiff(new Date(), targetDate)
   );
