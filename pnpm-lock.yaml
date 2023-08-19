@@ -14,9 +14,6 @@ dependencies:
   react-scripts:
     specifier: 5.0.1
     version: 5.0.1(@babel/plugin-syntax-flow@7.22.5)(@babel/plugin-transform-react-jsx@7.22.5)(eslint@8.47.0)(react@18.2.0)(typescript@5.1.6)
-  web-vitals:
-    specifier: ^3.4.0
-    version: 3.4.0
 
 devDependencies:
   gh-pages:
@@ -10520,10 +10517,6 @@ packages:
     resolution: {integrity: sha512-O84QOnr0icsbFGLS0O3bI5FswxzRr8/gHwWkDlQFskhSPryQXvrTMxjxGP4+iWYoauLoBvfDpkrOauZ+0iZpDA==}
     dependencies:
       minimalistic-assert: 1.0.1
-    dev: false
-
-  /web-vitals@3.4.0:
-    resolution: {integrity: sha512-n9fZ5/bG1oeDkyxLWyep0eahrNcPDF6bFqoyispt7xkW0xhDzpUBTgyDKqWDi1twT0MgH4HvvqzpUyh0ZxZV4A==}
     dev: false
 
   /webidl-conversions@4.0.2:
