@@ -25,7 +25,8 @@
 }
 
 .App-background {
-  background: linear-gradient(to top, transparent, rgba(40, 44, 52, 0.5)),
+  background:
+    linear-gradient(to top, transparent, rgba(40, 44, 52, 0.5)),
     center / cover url(./background.jpg);
   height: 100%;
   left: 0;

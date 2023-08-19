@@ -23,8 +23,8 @@ devDependencies:
     specifier: ^3.2.3
     version: 3.2.3
   prettier:
-    specifier: ^2.3.2
-    version: 2.3.2
+    specifier: ^3.0.2
+    version: 3.0.2
 
 packages:
 
@@ -8786,9 +8786,9 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: false
 
-  /prettier@2.3.2:
-    resolution: {integrity: sha512-lnJzDfJ66zkMy58OL5/NY5zp70S7Nz6KqcKkXYzn2tMVrNxvbqaBpg7H3qHaLxCJ5lNMsGuM8+ohS7cZrthdLQ==}
-    engines: {node: '>=10.13.0'}
+  /prettier@3.0.2:
+    resolution: {integrity: sha512-o2YR9qtniXvwEZlOKbveKfDQVyqxbEIWn48Z8m3ZJjBjcCmUy3xZGIv+7AkaeuaTr6yPXJjwv07ZWlsWbEy1rQ==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
