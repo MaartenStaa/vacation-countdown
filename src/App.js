@@ -32,7 +32,11 @@ function timeDiff(now, target) {
       continue;
     }
 
-    parts.push(`${n} ${FACTOR_LABELS[i][n === 1 ? 0 : 1]}`);
+    parts.push(
+      `<span class="App-countdown-number">${n}</span> ${
+        FACTOR_LABELS[i][n === 1 ? 0 : 1]
+      }`,
+    );
   }
 
   return (
@@ -66,9 +70,13 @@ function App() {
         <h1>Is it vacation time yet?</h1>
       </header>
 
-      <p className="App-countdown">
-        {targetDate > new Date() ? `Nope! Only ${timeLeft} left!` : "Yes!!!"}
-      </p>
+      <p
+        className="App-countdown"
+        dangerouslySetInnerHTML={{
+          __html:
+            targetDate > new Date() ? `Nope! Only ${timeLeft} left!` : "Yes!!!",
+        }}
+      />
     </div>
   );
 }
