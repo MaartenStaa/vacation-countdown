@@ -33,8 +33,7 @@ function timeDiff(now, target) {
     }
 
     parts.push(
-      `<span class="App-countdown-number">${n}</span> ${
-        FACTOR_LABELS[i][n === 1 ? 0 : 1]
+      `<span class="App-countdown-number">${n}</span> ${FACTOR_LABELS[i][n === 1 ? 0 : 1]
       }`,
     );
   }
@@ -48,7 +47,7 @@ function timeDiff(now, target) {
 }
 
 function App() {
-  const targetDate = useMemo(() => new Date(2024, 6, 15, 12), []);
+  const targetDate = useMemo(() => new Date(2026, 8, 15, 9, 40), []);
   const [timeLeft, setTimeLeft] = useState(() =>
     timeDiff(new Date(), targetDate),
   );
